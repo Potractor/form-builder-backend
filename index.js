@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 const mongoURI = process.env.MONGO_URI;
 // Connect to MongoDB
-mongoose.connect(mongoURI, {
+mongoose.connect('mongodb+srv://parameshkumar22:JIQ4ixyCwnZ3B1FU@cluster0.9y9ba.mongodb.net/form-builder?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
